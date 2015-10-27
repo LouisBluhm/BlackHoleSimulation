@@ -45,10 +45,23 @@ void draw() {
     timer = millis() + second();
   }
   
+  if(bX >= width || bY >= height) {
+    bX = 0;
+    bY = 0;
+  }
+  
   if(keyPressed) {
     if(key == 'q') {
       save("bh.png");
     }
   }
   
+  //TO ADD FROM JORDAN
+
+  /*
+  Black holes only have three properties- mass, charge and angular momentum. As objects fall in their mass, charge and angular momentum is added to the black hole. The radius of event horizon of the black hole is proportional to its mass. So infalling matter
+will increase the mass of the black hole and the radius of the horizon */
+
+//add mouseClick to add black hole in future version
+
 }
